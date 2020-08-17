@@ -1,0 +1,25 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: artemis-service
+  name: artemis-service
+spec:
+  ports:
+  - name: web-server 
+    port: 8161
+  - name: jmx
+    port: 9404
+  - name: core-mqtt-amqp-hornetq-stomp-openwire
+    port: 61616
+  - name: hornetq-stomp 
+    port: 5445
+  - name: amqp 
+    port: 5672
+  - name: mqtt 
+    port: 1883
+  - name: stomp 
+    port: 61613
+  selector:
+    app: artemis

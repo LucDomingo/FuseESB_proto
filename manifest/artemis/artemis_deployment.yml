@@ -1,0 +1,36 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: artemis
+  name: artemis
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: artemis
+  template:
+    metadata:
+      labels:
+        app: artemis
+    spec:
+      containers:
+      - image: vromero/activemq-artemis
+        imagePullPolicy: Never
+        name: artemis
+        ports:
+        - containerPort: 8161
+          protocol: TCP
+        - containerPort: 9404
+          protocol: TCP
+        - containerPort: 61616
+          protocol: TCP
+        - containerPort: 5445
+          protocol: TCP
+        - containerPort: 5672
+          protocol: TCP
+        - containerPort: 1883
+          protocol: TCP
+        - containerPort: 61613
+          protocol: TCP

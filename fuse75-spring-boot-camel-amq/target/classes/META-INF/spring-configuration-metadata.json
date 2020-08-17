@@ -1,0 +1,48 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "org.example.fis.AMQPConfiguration",
+      "name": "amqp",
+      "type": "org.example.fis.AMQPConfiguration"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "org.example.fis.AMQPConfiguration",
+      "name": "amqp.parameters",
+      "description": "AMQ parameters",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "org.example.fis.AMQPConfiguration",
+      "name": "amqp.password",
+      "description": "AMQ password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "org.example.fis.AMQPConfiguration",
+      "name": "amqp.port",
+      "description": "AMQ service port",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "org.example.fis.AMQPConfiguration",
+      "name": "amqp.service-name",
+      "description": "AMQ service name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "org.example.fis.AMQPConfiguration",
+      "name": "amqp.service-port",
+      "description": "AMQ service port",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "org.example.fis.AMQPConfiguration",
+      "name": "amqp.username",
+      "description": "AMQ username",
+      "type": "java.lang.String"
+    }
+  ]
+}

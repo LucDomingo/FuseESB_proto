@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: tmp-shell
+  name: tmp-shell
+spec:
+  containers:
+  - image: nicolaka/netshoot
+    command: ["/bin/bash"]
+    imagePullPolicy: Never
+    name: tmp-shell
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {}
