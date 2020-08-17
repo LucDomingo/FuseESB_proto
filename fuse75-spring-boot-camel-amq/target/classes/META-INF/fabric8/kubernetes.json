@@ -6,9 +6,11 @@
     "kind" : "Service",
     "metadata" : {
       "annotations" : {
+        "fabric8.io/git-commit" : "d655ba71fee5f5fcdc6b05c35a756adad339387e",
         "fabric8.io/iconUrl" : "img/icons/camel.svg",
-        "prometheus.io/port" : "9779",
-        "prometheus.io/scrape" : "true"
+        "fabric8.io/git-branch" : "master",
+        "prometheus.io/scrape" : "true",
+        "prometheus.io/port" : "9779"
       },
       "labels" : {
         "expose" : "true",
@@ -37,7 +39,9 @@
     "kind" : "Deployment",
     "metadata" : {
       "annotations" : {
+        "fabric8.io/git-commit" : "d655ba71fee5f5fcdc6b05c35a756adad339387e",
         "fabric8.io/iconUrl" : "img/icons/camel.svg",
+        "fabric8.io/git-branch" : "master",
         "fabric8.io/metrics-path" : "dashboard/file/camel-routes.json/?var-project=fuse75-spring-boot-camel-amq&var-version=1.0-SNAPSHOT"
       },
       "labels" : {
@@ -61,7 +65,9 @@
       "template" : {
         "metadata" : {
           "annotations" : {
+            "fabric8.io/git-commit" : "d655ba71fee5f5fcdc6b05c35a756adad339387e",
             "fabric8.io/iconUrl" : "img/icons/camel.svg",
+            "fabric8.io/git-branch" : "master",
             "fabric8.io/metrics-path" : "dashboard/file/camel-routes.json/?var-project=fuse75-spring-boot-camel-amq&var-version=1.0-SNAPSHOT"
           },
           "labels" : {
@@ -100,7 +106,7 @@
                 }
               }
             } ],
-            "image" : "fis/fuse75-spring-boot-camel-amq:snapshot-200817-150642-0529",
+            "image" : "fis/fuse75-spring-boot-camel-amq:snapshot-200817-171610-0902",
             "imagePullPolicy" : "IfNotPresent",
             "livenessProbe" : {
               "httpGet" : {

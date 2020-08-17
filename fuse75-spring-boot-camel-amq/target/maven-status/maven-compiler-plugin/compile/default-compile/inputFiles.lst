@@ -1,3 +1,3 @@
-/home/vagrant/fuse75-spring-boot-camel-amq/src/main/java/org/example/fis/AMQPConfiguration.java
-/home/vagrant/fuse75-spring-boot-camel-amq/src/main/java/org/example/fis/Application.java
-/home/vagrant/fuse75-spring-boot-camel-amq/src/main/java/org/example/fis/OrderGenerator.java
+/home/vagrant/FuseESB_proto/fuse75-spring-boot-camel-amq/src/main/java/org/example/fis/AMQPConfiguration.java
+/home/vagrant/FuseESB_proto/fuse75-spring-boot-camel-amq/src/main/java/org/example/fis/Application.java
+/home/vagrant/FuseESB_proto/fuse75-spring-boot-camel-amq/src/main/java/org/example/fis/OrderGenerator.java

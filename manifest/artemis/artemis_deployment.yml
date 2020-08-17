@@ -15,9 +15,16 @@ spec:
       labels:
         app: artemis
     spec:
+      volumes:
+      - name: "broker-conf"
+        hostPath:
+          path: "/home/vagrant/FuseESB_proto/manifest/artemis/broker.xml"
       containers:
       - image: vromero/activemq-artemis
         imagePullPolicy: Never
+        volumeMounts:
+        - mountPath: "/var/lib/artemis/etc/broker.xml"
+          name: "broker-conf"
         name: artemis
         ports:
         - containerPort: 8161

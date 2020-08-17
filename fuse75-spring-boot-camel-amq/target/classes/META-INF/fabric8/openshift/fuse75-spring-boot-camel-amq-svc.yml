@@ -3,9 +3,11 @@ apiVersion: v1
 kind: Service
 metadata:
   annotations:
+    fabric8.io/git-commit: d655ba71fee5f5fcdc6b05c35a756adad339387e
     fabric8.io/iconUrl: img/icons/camel.svg
-    prometheus.io/port: "9779"
+    fabric8.io/git-branch: master
     prometheus.io/scrape: "true"
+    prometheus.io/port: "9779"
   labels:
     expose: "true"
     app: fuse75-spring-boot-camel-amq
