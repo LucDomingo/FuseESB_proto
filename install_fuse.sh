@@ -1,5 +1,5 @@
 # Login
-oc login --token=buM58RA0lq0593uWXID_zk_IfihRrwfE5Fi7irdNG9o --server=https://api.ca-central-1.starter.openshift-online.com:6443
+oc login --token={TOKEN} --server=https://api.ca-central-1.starter.openshift-online.com:6443
 # Installation des Images Streams (spécificité de OpenShift). De ce que j ai compris c est un objet qui fait le lien entre l image sur le repo et celle utilisée par les
 # pods. Ainsi dès qu'une nouvelle image est push il peut y avoir une mise à jour automatique selon des politiques que nous pouvons définir (Rolling Update,...)
 BASEURL=https://raw.githubusercontent.com/jboss-fuse/application-templates/application-templates-2.1.fuse-720018-redhat-00001
