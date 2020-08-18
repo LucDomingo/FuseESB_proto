@@ -1,0 +1,4 @@
+org/example/fis/AMQPConfiguration.class
+META-INF/spring-configuration-metadata.json
+org/example/fis/Application.class
+org/example/fis/OrderGenerator.class
