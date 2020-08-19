@@ -1,3 +1,4 @@
+/home/vagrant/FuseESB_proto/fuse_esb_proto/src/main/java/org/example/fis/ProcessorOne.java
+/home/vagrant/FuseESB_proto/fuse_esb_proto/src/main/java/org/example/fis/DynamicRouterBean.java
 /home/vagrant/FuseESB_proto/fuse_esb_proto/src/main/java/org/example/fis/Application.java
 /home/vagrant/FuseESB_proto/fuse_esb_proto/src/main/java/org/example/fis/AMQPConfiguration.java
-/home/vagrant/FuseESB_proto/fuse_esb_proto/src/main/java/org/example/fis/OrderGenerator.java

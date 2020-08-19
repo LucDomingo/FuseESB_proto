@@ -1,0 +1,21 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: activemq-service
+  name: activemq-service
+spec:
+  ports:
+  - name: web-server 
+    port: 8161
+  - name: jmx
+    port: 61616
+  - name: amqp 
+    port: 5672
+  - name: mqtt 
+    port: 1883
+  - name: stomp 
+    port: 61613
+  selector:
+    app: activemq

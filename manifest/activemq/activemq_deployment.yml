@@ -1,0 +1,39 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: activemq
+  name: activemq
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: activemq
+  template:
+    metadata:
+      labels:
+        app: activemq
+    spec:
+      volumes:
+      - name: "broker-conf"
+        hostPath:
+          path: "/home/vagrant/FuseESB_proto/manifest/activemq/jetty.xml"
+      containers:
+      - image: rmohr/activemq
+        imagePullPolicy: Never
+        name: activemq
+        volumeMounts:
+        - mountPath: "/opt/apache-activemq-5.15.6/conf/jetty.xml"
+          name: "broker-conf"
+        ports:
+        - containerPort: 8161
+          protocol: TCP
+        - containerPort: 61616
+          protocol: TCP
+        - containerPort: 5672
+          protocol: TCP
+        - containerPort: 1883
+          protocol: TCP
+        - containerPort: 61613
+          protocol: TCP

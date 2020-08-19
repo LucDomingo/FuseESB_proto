@@ -1,4 +1,5 @@
 org/example/fis/AMQPConfiguration.class
+org/example/fis/ProcessorOne.class
 META-INF/spring-configuration-metadata.json
+org/example/fis/DynamicRouterBean.class
 org/example/fis/Application.class
-org/example/fis/OrderGenerator.class

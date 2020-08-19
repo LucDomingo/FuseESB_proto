@@ -9,12 +9,12 @@ spec:
   volumes:
   - name: "conspy"
     hostPath:
-      path: "/home/vagrant/FuseESB_proto/manifest/apache-qpid-proton/consumer.py"
+      path: "/home/vagrant/FuseESB_proto/manifest/apache-qpid-proton/script_utiles"
   containers:
   - image: qpid-python
     imagePullPolicy: Never
     volumeMounts:
-    - mountPath: "/home/consumer.py"
+    - mountPath: "/home/"
       name: "conspy"
     name: qpid-python
     resources: {}
